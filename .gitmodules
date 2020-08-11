@@ -1,0 +1,6 @@
+[submodule "packages/sparta"]
+	path = packages/sparta
+	url = https://github.com/akropolisio/sparta
+[submodule "packages/delphi"]
+	path = packages/delphi
+	url = https://github.com/akropolisio/delphi
