@@ -1,0 +1,53 @@
+{
+    "name": "akropolis-pool",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "generate": "npx truffle compile && typechain --target truffle './build/**/*.json'",
+        "prepare": "yarn generate",
+        "test": "scripts/test.sh",
+        "test-gas": "GAS_REPORTER=true yarn test && npx codechecks",
+        "tsc": "tsc --noEmit",
+        "lint": "solhint -c .solhint.json contracts/**/*.sol",
+        "analyze": "npx truffle run verify",
+        "coverage": "npx truffle run coverage",
+        "deploy": "scripts/deploy.sh"
+    },
+    "dependencies": {
+        "@codechecks/client": "^0.1.10",
+        "@openzeppelin/cli": "^2.6.0",
+        "@openzeppelin/contracts": "^2.4.0",
+        "@openzeppelin/contracts-ethereum-package": "^2.4.0",
+        "@openzeppelin/test-helpers": "^0.5.4",
+        "@openzeppelin/upgrades": "^2.6.0",
+        "@truffle/hdwallet-provider": "^1.0.29",
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^13.5.0",
+        "bn.js": "^5.1.1",
+        "coveralls": "^3.0.9",
+        "dotenv": "^8.2.0",
+        "eth-gas-reporter": "^0.2.14",
+        "ethereum-types": "^3.0.0",
+        "ganache-cli": "^6.8.2",
+        "git": "^0.1.5",
+        "lodash": "^4.17.15",
+        "open-cli": "^5.0.0",
+        "shx": "^0.3.2",
+        "solidity-coverage": "0.7.1",
+        "truffle": "^5.1.10",
+        "truffle-security": "^1.6.1",
+        "truffle-typings": "^1.0.8",
+        "ts-generator": "^0.0.8",
+        "ts-node": "^8.6.2",
+        "tslint": "6.0.0",
+        "typechain": "1.0.4",
+        "typechain-target-truffle": "git+https://github.com/pash7ka/TypeChain/#dist-typechain-target-truffle",
+        "typescript": "3.7.5",
+        "web3-provider-engine": "^15.0.4",
+        "web3-utils": "^1.2.5"
+    },
+    "devDependencies": {
+        "truffle-contract-size": "^1.0.1"
+    }
+}
