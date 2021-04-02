@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "skipLibCheck":true,
+    "lib": ["es2015", "esnext.asynciterable"],
+    "typeRoots": ["./node_modules/@types/web3", "./node_modules/@types", "types/"]
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "example", "build"]
+}
