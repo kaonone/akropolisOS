@@ -1,3 +1,7 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/akropolisio/akropolisOS)
+
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/akropolisio/akropolisOS)
+
 # akropolisOS
 
 AkropolisOS is A Solidity framework for building complex dApps and protocols (savings, pensions, loans, investments).
